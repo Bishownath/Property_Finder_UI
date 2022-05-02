@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     val bathrooms = intArrayOf(2, 2, 3)
     val year = intArrayOf(2010, 2002, 2022)
 
+    val image_1 = arrayListOf<Int>()
+    val image_2 = arrayListOf<Int>()
+    val image_3 = arrayListOf<Int>()
+    val allImages = mutableListOf<ArrayList<Int>>()
+
 
     fun populate() {
         titles.add("First Rent")
@@ -25,6 +30,21 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         description.add("First Description")
         description.add("Second Description")
         description.add("Third Description")
+
+        image_1.add(R.drawable.property_1_img_1)
+        image_1.add(R.drawable.property_1_img_2)
+        image_1.add(R.drawable.property_1_img_3)
+        allImages.add(image_1)
+
+        image_2.add(R.drawable.property_2_img_1)
+        image_2.add(R.drawable.property_2_img_2)
+        image_2.add(R.drawable.property_2_img_3)
+        image_2.add(R.drawable.property_2_img_4)
+        allImages.add(image_2)
+
+        image_3.add(R.drawable.property_3_img_1)
+        image_3.add(R.drawable.property_3_img_2)
+        allImages.add(image_3)
     }
 
 
@@ -119,6 +139,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         bundles.putInt("bedrooms", bedroom[index])
         bundles.putInt("bathrooms", bathrooms[index])
         bundles.putInt("buildYear", year[index])
+        bundles.putIntegerArrayList("allImages", allImages[index])
 
         intent.putExtras(bundles)
         startActivity(intent)

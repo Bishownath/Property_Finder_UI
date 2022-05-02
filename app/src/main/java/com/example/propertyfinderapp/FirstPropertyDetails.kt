@@ -2,8 +2,8 @@ package com.example.propertyfinderapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
-import org.w3c.dom.Text
 
 class FirstPropertyDetails : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,5 +26,19 @@ class FirstPropertyDetails : AppCompatActivity() {
 
         val buildYear = findViewById<TextView>(R.id.buildYearDetails)
         buildYear.text = intent?.getInt("buildYear").toString()
+
+
+        var index = 0
+        val image = intent?.getIntegerArrayList("allImages")
+
+        val firstPropImage = findViewById<ImageView>(R.id.firstPropertyImage)
+        firstPropImage.setImageResource(image!![index])
+        firstPropImage.setOnClickListener {
+            index++
+            if (index == image!!.size) {
+                index = 0
+            }
+            firstPropImage.setImageResource(image!![index])
+        }
     }
 }

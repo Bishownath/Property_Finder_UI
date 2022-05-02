@@ -179,7 +179,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/property_1_img_2" />
+            app:srcCompat="@drawable/property_2_img_1" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -306,7 +306,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
             android:scaleType="fitXY"
-            app:srcCompat="@drawable/property_1_img_2" />
+            app:srcCompat="@drawable/property_3_img_1" />
 
         <LinearLayout
             android:layout_width="match_parent"
