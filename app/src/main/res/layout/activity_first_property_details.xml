@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/property_1_img_1" />
 
     <TextView
-        android:id="@+id/pricingTag"
+        android:id="@+id/titleDetails"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="24dp"
@@ -73,7 +73,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/bedroomCountDetails"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:padding="5sp"
@@ -89,7 +89,7 @@
                     android:background="#BCB5B5" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/bedroomDetails"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:padding="5sp"
@@ -104,7 +104,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/bathroomCountDetails"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:padding="5sp"
@@ -120,9 +120,9 @@
                     android:background="#BCB5B5" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/bathroomDetails"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:padding="5sp"
                     android:text="Bathroom"
                     android:textAlignment="center" />
@@ -135,7 +135,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView19"
+                    android:id="@+id/buildYearDetails"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:padding="5sp"
@@ -151,7 +151,7 @@
                     android:background="#BCB5B5" />
 
                 <TextView
-                    android:id="@+id/textView20"
+                    android:id="@+id/yearDetails"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:padding="5sp"
@@ -162,7 +162,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/longDesc"
+            android:id="@+id/descriptionDetails"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="5sp"
